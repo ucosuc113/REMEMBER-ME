@@ -17,7 +17,7 @@ public:
 void OnUpdate(float deltaTime) override {
     InputActions& in = InputService::Actions();
  
- float avanzar = in.Axis("move_forward","move_back");
+ float avanzar = in.Axis("move_back", "move_forward");
  
  Transform& t = gameObject->transform;
    
