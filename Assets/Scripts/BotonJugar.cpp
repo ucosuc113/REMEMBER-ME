@@ -3,27 +3,22 @@
 #include "Engine/Scripting/ScriptFields.h"
 #include "Engine/UI/SceneUi.h"
 #include "Engine/Input/Cursor.h"
+#include "Engine/Scene/SceneService.h"
 
 using namespace strace;
 
 class BotonJugar : public strace::IScript {
     ObjectField boton{this, "boton"};
-    ObjectField menu{this, "menu"};
-    ObjectField juego{this, "juego"};
+    TextField escena{this, "escena", "Escena Principal"};
 
 public:
     void OnStart() override {
         Cursor::SetMode(CursorMode::Visible);
-        if (GameObject* j = juego.Get()) j->active = false;
     }
 
     void OnUpdate(float) override {
         GameObject* b = boton.Get();
-        if (!b || !SceneUi::Clicked(*b)) return;
-
-        if (GameObject* m = menu.Get()) m->active = false;
-        if (GameObject* j = juego.Get()) j->active = true;
-        Cursor::SetMode(CursorMode::Locked);
+        if (b && SceneUi::Clicked(*b)) SceneService::LoadScene(escena.Get());
     }
 };
 

@@ -54,13 +54,13 @@
   "scenes": [
     {
       "enabled": true,
-      "name": "Escena Principal",
-      "path": "Scenes/Escena Principal.strscene"
+      "name": "MainMenu",
+      "path": "Scenes/MainMenu.strscene"
     },
     {
       "enabled": true,
-      "name": "MainMenu",
-      "path": "Scenes/MainMenu.strscene"
+      "name": "Escena Principal",
+      "path": "Scenes/Escena Principal.strscene"
     }
   ],
   "web": {

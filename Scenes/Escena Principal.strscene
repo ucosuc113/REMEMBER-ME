@@ -19,7 +19,7 @@
       "strength": 1.0,
       "stroke": 0.12999999523162842
     },
-    "postProcess": "",
+    "postProcess": "Assets/Materials/JuegoPost.strmat",
     "tonemap": "linear",
     "uiOverPost": false
   },
@@ -306,6 +306,35 @@
             "far": 1000.0,
             "focusDistance": 5.0,
             "fovY": 60.0,
+            "grade": {
+              "contrast": 1.1799999475479126,
+              "enabled": true,
+              "exposure": 0.0,
+              "gain": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "gamma": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "highlights": 0.0,
+              "hue": 0.0,
+              "lift": [
+                0.0,
+                0.0,
+                -0.029999999329447746
+              ],
+              "mix": 1.0,
+              "pivot": 0.5,
+              "saturation": 0.800000011920929,
+              "shadows": 0.0,
+              "temperature": -0.15000000596046448,
+              "tint": 0.0,
+              "vibrance": 0.0
+            },
             "near": 0.10000000149011612,
             "orthoHalfHeight": 10.0
           },
@@ -377,7 +406,8 @@
         }
       ],
       "scripts": [
-        "Control"
+        "Control",
+        "Musica"
       ],
       "staticForLighting": false
     },

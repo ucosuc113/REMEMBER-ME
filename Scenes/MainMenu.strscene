@@ -572,6 +572,16 @@
         1.0,
         1.0
       ],
+      "scriptFields": [
+        {
+          "field": "boton",
+          "script": "BotonJugar",
+          "value": "Canvas (1)/Imagen (1)"
+        }
+      ],
+      "scripts": [
+        "BotonJugar"
+      ],
       "staticForLighting": false
     },
     {
@@ -757,6 +767,9 @@
             1.0,
             1.0,
             -0.75
+          ],
+          "scripts": [
+            "Parpadeo"
           ],
           "staticForLighting": false
         }
