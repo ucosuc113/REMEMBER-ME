@@ -23,5 +23,99 @@
     "tonemap": "linear",
     "uiOverPost": false
   },
-  "roots": []
+  "roots": [
+    {
+      "active": false,
+      "children": [],
+      "faceCulling": true,
+      "name": "Esfera",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Sphere",
+      "rotation": [
+        0.0,
+        52.5,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        2.0799999237060547,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": false,
+      "children": [],
+      "faceCulling": true,
+      "name": "Toroide",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Torus",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "faceCulling": true,
+          "name": "Cubo",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            7.0,
+            0.2199999988079071,
+            7.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "faceCulling": true,
+      "name": "Habitacion Beta",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    }
+  ]
 }
