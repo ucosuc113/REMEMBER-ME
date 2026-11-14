@@ -21,9 +21,9 @@ void OnUpdate(float deltaTime) override {
  
  Transform& t = gameObject->transform;
    
+   float yaw = t.rotation[1] * 3.14159265f / 180.0f;
    
-   
-   t.position[0] 
+   t.position[0] += sin(yaw) * avanzar * speed.Get() * deltaTime;
    
    
     }
