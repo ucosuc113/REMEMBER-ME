@@ -1,0 +1,27 @@
+{
+  "environment": {
+    "ambientColor": [
+      0.11999999731779099,
+      0.11999999731779099,
+      0.14000000059604645
+    ],
+    "ambientEnergy": 1.0,
+    "ambientGround": [
+      0.11999999731779099,
+      0.11999999731779099,
+      0.14000000059604645
+    ],
+    "exposure": 1.0,
+    "hemisphere": false,
+    "paint": {
+      "bristle": 0.5,
+      "detail": 0.6000000238418579,
+      "strength": 1.0,
+      "stroke": 0.12999999523162842
+    },
+    "postProcess": "",
+    "tonemap": "linear",
+    "uiOverPost": false
+  },
+  "roots": []
+}
