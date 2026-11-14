@@ -184,7 +184,7 @@
       "staticForLighting": false
     },
     {
-      "active": true,
+      "active": false,
       "children": [
         {
           "active": true,

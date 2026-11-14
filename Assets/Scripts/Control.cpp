@@ -12,7 +12,7 @@ class Control : public strace::IScript {
 FloatField speed{this,"speed",5.0f};
 FloatField giro{this,"giro",2.0f};
 
-public:
+public: 
 
 void OnUpdate(float deltaTime) override {
     InputActions& in = InputService::Actions();
@@ -24,7 +24,7 @@ void OnUpdate(float deltaTime) override {
    float yaw = t.rotation[1] * 3.14159265f / 180.0f;
    
    t.position[0] += sin(yaw) * avanzar * speed.Get() * deltaTime;
-   
+   t.position[2] += cos(yaw) * avanzar * speed.Get() * deltaTime;
    
     }
 };
