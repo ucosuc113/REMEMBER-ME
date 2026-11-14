@@ -331,6 +331,19 @@
           "staticForLighting": false
         }
       ],
+      "components": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "height": 2.0,
+          "isTrigger": false,
+          "radius": 0.5,
+          "type": "CapsuleCollider"
+        }
+      ],
       "faceCulling": true,
       "name": "Capsula",
       "position": [
@@ -348,6 +361,9 @@
         1.0,
         1.0,
         1.0
+      ],
+      "scripts": [
+        "Control"
       ],
       "staticForLighting": false
     }

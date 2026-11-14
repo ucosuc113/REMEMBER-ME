@@ -11,3 +11,5 @@ public:
 };
 
 STRACE_REGISTER_SCRIPT(NuevoScript)
+
+
