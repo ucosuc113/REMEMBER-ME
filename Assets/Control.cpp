@@ -8,13 +8,11 @@ public:
     void OnStart() override {
     }
 
- 
-
     void OnUpdate(float deltaTime) override {
     in.BindKey"Caminar",Key::W
     
     if(in.pressed("Caminar")){
-    
+    GameObject.transform.rotation[1] += 90.0f * deltaTime
     }
     }
 };
