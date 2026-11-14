@@ -61,6 +61,11 @@
       "enabled": true,
       "name": "Escena Principal",
       "path": "Scenes/Escena Principal.strscene"
+    },
+    {
+      "enabled": true,
+      "name": "Hab2",
+      "path": "Scenes/Hab2.strscene"
     }
   ],
   "web": {

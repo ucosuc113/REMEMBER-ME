@@ -1,0 +1,1131 @@
+{
+  "environment": {
+    "ambientColor": [
+      0.11999999731779099,
+      0.11999999731779099,
+      0.14000000059604645
+    ],
+    "ambientEnergy": 1.0,
+    "ambientGround": [
+      0.11999999731779099,
+      0.11999999731779099,
+      0.14000000059604645
+    ],
+    "exposure": 1.0,
+    "hemisphere": false,
+    "paint": {
+      "bristle": 0.5,
+      "detail": 0.6000000238418579,
+      "strength": 1.0,
+      "stroke": 0.12999999523162842
+    },
+    "postProcess": "Assets/Materials/JuegoPost.strmat",
+    "tonemap": "linear",
+    "uiOverPost": true
+  },
+  "roots": [
+    {
+      "active": false,
+      "children": [],
+      "faceCulling": true,
+      "name": "Esfera",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Sphere",
+      "rotation": [
+        0.0,
+        52.5,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        2.0799999237060547,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": false,
+      "children": [],
+      "faceCulling": true,
+      "name": "Toroide",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Torus",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "faceCulling": true,
+          "name": "Cubo",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            7.0,
+            0.2199999988079071,
+            7.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "faceCulling": true,
+      "name": "Habitacion Beta",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "faceCulling": true,
+      "light": {
+        "attenuation": 1.0,
+        "castsShadows": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 1.0,
+        "range": 10.0,
+        "spotAngle": 45.0,
+        "static": false,
+        "type": "Point"
+      },
+      "name": "Luz Puntual",
+      "position": [
+        0.8,
+        4.6,
+        -9.2
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [
+        {
+          "referenceHeight": 720.0,
+          "type": "UiCanvas"
+        }
+      ],
+      "faceCulling": true,
+      "name": "Canvas",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": false,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "components": [
+            {
+              "anchor": [
+                1,
+                1
+              ],
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "size": [
+                320.0,
+                40.0
+              ],
+              "type": "UiTransform"
+            },
+            {
+              "align": [
+                1,
+                1
+              ],
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "scale": 2,
+              "text": "Prueba",
+              "type": "UiLabel",
+              "wrap": false
+            }
+          ],
+          "faceCulling": true,
+          "name": "Texto",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "components": [
+        {
+          "anchor": [
+            1,
+            1
+          ],
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            320.0,
+            180.0
+          ],
+          "type": "UiTransform"
+        },
+        {
+          "border": 0.0,
+          "borderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "color": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "type": "UiPanel"
+        }
+      ],
+      "faceCulling": true,
+      "name": "Panel",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "camera": {
+            "aperture": 0.0,
+            "far": 1000.0,
+            "focusDistance": 5.0,
+            "fovY": 60.0,
+            "grade": {
+              "contrast": 1.1799999475479126,
+              "enabled": true,
+              "exposure": 0.0,
+              "gain": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "gamma": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "highlights": 0.0,
+              "hue": 0.0,
+              "lift": [
+                0.0,
+                0.0,
+                -0.029999999329447746
+              ],
+              "mix": 1.0,
+              "pivot": 0.5,
+              "saturation": 0.800000011920929,
+              "shadows": 0.0,
+              "temperature": -0.15000000596046448,
+              "tint": 0.0,
+              "vibrance": 0.0
+            },
+            "near": 0.10000000149011612,
+            "orthoHalfHeight": 10.0
+          },
+          "children": [],
+          "faceCulling": true,
+          "name": "Camara",
+          "position": [
+            0.0,
+            0.3423716723918915,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "components": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "height": 1.0,
+          "isTrigger": false,
+          "radius": 0.30000001192092896,
+          "type": "CapsuleCollider"
+        },
+        {
+          "gravity": 18.0,
+          "isKinematic": false,
+          "mass": 1.0,
+          "type": "Rigidbody",
+          "useGravity": true
+        }
+      ],
+      "faceCulling": true,
+      "name": "Capsula",
+      "position": [
+        -0.55,
+        2.93,
+        -8.658999999999999
+      ],
+      "primitive": "Capsule",
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "scale": [
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "scriptFields": [
+        {
+          "field": "volumen",
+          "script": "Musica",
+          "value": "6"
+        },
+        {
+          "field": "camara",
+          "script": "Control",
+          "value": "Capsula/Camara"
+        },
+        {
+          "field": "speed",
+          "script": "Control",
+          "value": "2"
+        },
+        {
+          "field": "jump",
+          "script": "Control",
+          "value": "4.8"
+        },
+        {
+          "field": "jugador",
+          "script": "Despertar",
+          "value": "Capsula"
+        },
+        {
+          "field": "camara",
+          "script": "Despertar",
+          "value": "Capsula/Camara"
+        },
+        {
+          "field": "fundido",
+          "script": "Despertar",
+          "value": "Fundido/Negro"
+        },
+        {
+          "field": "puntoCama",
+          "script": "Despertar",
+          "value": "PuntoCama"
+        },
+        {
+          "field": "puntoPie",
+          "script": "Despertar",
+          "value": "PuntoPie"
+        }
+      ],
+      "scripts": [
+        "Control",
+        "Musica",
+        "Despertar"
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "faceCulling": true,
+      "name": "Mapas",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "components": [
+            {
+              "center": [
+                2.69,
+                -3.27,
+                -30.67
+              ],
+              "isTrigger": false,
+              "size": [
+                12.6,
+                1.0,
+                16.2
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                -3.61,
+                3.0,
+                -30.67
+              ],
+              "isTrigger": false,
+              "size": [
+                0.5,
+                12.0,
+                16.2
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                2.69,
+                3.0,
+                -22.56
+              ],
+              "isTrigger": false,
+              "size": [
+                12.6,
+                12.0,
+                0.5
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                2.69,
+                3.0,
+                -38.78
+              ],
+              "isTrigger": false,
+              "size": [
+                12.6,
+                12.0,
+                0.5
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                8.99,
+                3.0,
+                -27.65
+              ],
+              "isTrigger": false,
+              "size": [
+                0.5,
+                12.0,
+                9.68
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                8.99,
+                3.0,
+                -36.78
+              ],
+              "isTrigger": false,
+              "size": [
+                0.5,
+                12.0,
+                3.5
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                8.99,
+                0.51,
+                -33.76
+              ],
+              "isTrigger": false,
+              "size": [
+                0.5,
+                6.56,
+                2.54
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                8.99,
+                8.6,
+                -33.76
+              ],
+              "isTrigger": false,
+              "size": [
+                0.5,
+                0.8,
+                2.54
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                13.3,
+                3.29,
+                -33.76
+              ],
+              "isTrigger": false,
+              "size": [
+                9.1,
+                1.0,
+                2.54
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                13.3,
+                6.0,
+                -35.28
+              ],
+              "isTrigger": false,
+              "size": [
+                9.1,
+                5.0,
+                0.5
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                13.3,
+                6.0,
+                -32.24
+              ],
+              "isTrigger": false,
+              "size": [
+                9.1,
+                5.0,
+                0.5
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                18.09,
+                6.0,
+                -33.76
+              ],
+              "isTrigger": false,
+              "size": [
+                0.5,
+                5.0,
+                2.54
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                -0.97,
+                -1.95,
+                -28.86
+              ],
+              "isTrigger": false,
+              "size": [
+                4.1,
+                1.65,
+                3.42
+              ],
+              "type": "BoxCollider3D"
+            }
+          ],
+          "faceCulling": false,
+          "mesh": "Assets\\Models\\Habi2remember.strmesh",
+          "name": "Cubo (1)",
+          "position": [
+            0.0,
+            3.4397709369659424,
+            0.0
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ],
+          "staticForLighting": false,
+          "submeshMaterials": []
+        },
+        {
+          "active": true,
+          "children": [],
+          "faceCulling": true,
+          "name": "Colliders",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "faceCulling": true,
+      "name": "1",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [],
+      "faceCulling": true,
+      "name": "PuntoCama",
+      "position": [
+        -0.55,
+        2.93,
+        -8.658999999999999
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [],
+      "faceCulling": true,
+      "name": "PuntoPie",
+      "position": [
+        0.0,
+        3.05,
+        -9.674
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "isTrigger": false,
+          "size": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "type": "BoxCollider3D"
+        },
+        {
+          "gravity": 18.0,
+          "isKinematic": false,
+          "mass": 1.0,
+          "type": "Rigidbody",
+          "useGravity": true
+        }
+      ],
+      "faceCulling": true,
+      "name": "Caja",
+      "position": [
+        1.8,
+        2.9,
+        -7.4
+      ],
+      "primitive": "Cube",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "isTrigger": false,
+          "size": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "type": "BoxCollider3D"
+        },
+        {
+          "gravity": 18.0,
+          "isKinematic": false,
+          "mass": 1.0,
+          "type": "Rigidbody",
+          "useGravity": true
+        }
+      ],
+      "faceCulling": true,
+      "name": "Caja 2",
+      "position": [
+        0.2,
+        3.15,
+        -10.9
+      ],
+      "primitive": "Cube",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        1.0,
+        0.5
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "isTrigger": false,
+          "size": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "type": "BoxCollider3D"
+        },
+        {
+          "gravity": 18.0,
+          "isKinematic": false,
+          "mass": 1.0,
+          "type": "Rigidbody",
+          "useGravity": true
+        }
+      ],
+      "faceCulling": true,
+      "name": "Caja 3",
+      "position": [
+        1.6,
+        3.4,
+        -11.0
+      ],
+      "primitive": "Cube",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        1.5,
+        0.5
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "isTrigger": true,
+          "size": [
+            2.19,
+            1.32,
+            0.76
+          ],
+          "type": "BoxCollider3D"
+        }
+      ],
+      "faceCulling": true,
+      "name": "Salida",
+      "position": [
+        4.245,
+        5.24,
+        -10.128
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "scriptFields": [
+        {
+          "field": "jugador",
+          "script": "Salida",
+          "value": "Capsula"
+        },
+        {
+          "field": "fundido",
+          "script": "Salida",
+          "value": "Fundido/Negro"
+        },
+        {
+          "field": "siguiente",
+          "script": "Salida",
+          "value": ""
+        }
+      ],
+      "scripts": [
+        "Salida"
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "faceCulling": false,
+          "material": "Assets/Materials/NuevoMaterial.strmat",
+          "name": "Plano",
+          "position": [
+            0.800000011920929,
+            0.0,
+            0.0
+          ],
+          "primitive": "Plane",
+          "rotation": [
+            -90.0,
+            0.0,
+            -90.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            -0.75
+          ],
+          "scriptFields": [
+            {
+              "field": "sonido",
+              "script": "Parpadeo",
+              "value": ""
+            }
+          ],
+          "scripts": [
+            "Parpadeo"
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "faceCulling": true,
+      "mesh": "Assets\\Models\\alarma.strmesh",
+      "name": "Despertador",
+      "position": [
+        -0.6215994954109192,
+        3.097273826599121,
+        -9.444198167860508
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        -27.44012451171875,
+        0.0
+      ],
+      "scale": [
+        0.05999999865889549,
+        0.07999999821186066,
+        0.07999999821186066
+      ],
+      "staticForLighting": false,
+      "submeshMaterials": [
+        {
+          "material": "Assets/Materials/alarma/Material.strmat",
+          "name": "Material"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "components": [
+            {
+              "anchor": [
+                1,
+                1
+              ],
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "size": [
+                6000.0,
+                6000.0
+              ],
+              "type": "UiTransform"
+            },
+            {
+              "border": 0.0,
+              "borderColor": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "color": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "type": "UiPanel"
+            }
+          ],
+          "faceCulling": true,
+          "name": "Negro",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "components": [
+        {
+          "referenceHeight": 720.0,
+          "type": "UiCanvas"
+        }
+      ],
+      "faceCulling": true,
+      "name": "Fundido",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    }
+  ]
+}

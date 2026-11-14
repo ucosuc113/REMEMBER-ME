@@ -33,6 +33,7 @@ public:
         m_visible = true;
         Mostrar(true);
 
+        if (sonido.Get().empty()) return;
         std::wstring root = SceneService::ProjectRoot();
         if (!root.empty() && root.back() != L'/' && root.back() != L'\\') root += L'/';
         AudioService::PlayTrackFile(root + Utf8ToWide(sonido.Get()), volumen.Get(), true);

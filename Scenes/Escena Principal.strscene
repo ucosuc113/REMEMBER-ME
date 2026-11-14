@@ -21,7 +21,7 @@
     },
     "postProcess": "Assets/Materials/JuegoPost.strmat",
     "tonemap": "linear",
-    "uiOverPost": false
+    "uiOverPost": true
   },
   "roots": [
     {
@@ -383,14 +383,14 @@
       "faceCulling": true,
       "name": "Capsula",
       "position": [
-        0.37985560297966003,
-        3.3832130432128906,
-        -0.7762373089790344
+        -0.55,
+        2.93,
+        0.665
       ],
       "primitive": "Capsule",
       "rotation": [
         0.0,
-        0.0,
+        90.0,
         0.0
       ],
       "scale": [
@@ -400,14 +400,55 @@
       ],
       "scriptFields": [
         {
+          "field": "volumen",
+          "script": "Musica",
+          "value": "6"
+        },
+        {
           "field": "camara",
           "script": "Control",
           "value": "Capsula/Camara"
+        },
+        {
+          "field": "speed",
+          "script": "Control",
+          "value": "2"
+        },
+        {
+          "field": "jump",
+          "script": "Control",
+          "value": "4.8"
+        },
+        {
+          "field": "jugador",
+          "script": "Despertar",
+          "value": "Capsula"
+        },
+        {
+          "field": "camara",
+          "script": "Despertar",
+          "value": "Capsula/Camara"
+        },
+        {
+          "field": "fundido",
+          "script": "Despertar",
+          "value": "Fundido/Negro"
+        },
+        {
+          "field": "puntoCama",
+          "script": "Despertar",
+          "value": "PuntoCama"
+        },
+        {
+          "field": "puntoPie",
+          "script": "Despertar",
+          "value": "PuntoPie"
         }
       ],
       "scripts": [
         "Control",
-        "Musica"
+        "Musica",
+        "Despertar"
       ],
       "staticForLighting": false
     },
@@ -555,15 +596,15 @@
             },
             {
               "center": [
-                17.200000762939453,
-                2.200000047683716,
-                -3.200000047683716
+                -0.965,
+                -1.955,
+                2.215
               ],
-              "isTrigger": true,
+              "isTrigger": false,
               "size": [
-                8.449999809265137,
-                5.050000190734863,
-                2.799999952316284
+                4.09,
+                1.65,
+                3.42
               ],
               "type": "BoxCollider3D"
             }
@@ -708,13 +749,271 @@
         }
       ],
       "faceCulling": true,
-      "name": "Cubo (2)",
+      "name": "Caja",
       "position": [
-        0.0,
-        5.066863536834717,
-        1.543618083000183
+        1.8,
+        2.95,
+        1.6
       ],
       "primitive": "Cube",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [],
+      "faceCulling": true,
+      "name": "PuntoCama",
+      "position": [
+        -0.55,
+        2.93,
+        0.665
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        90.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [],
+      "faceCulling": true,
+      "name": "PuntoPie",
+      "position": [
+        0.0,
+        3.05,
+        -0.35
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "isTrigger": true,
+          "size": [
+            2.535,
+            1.515,
+            0.84
+          ],
+          "type": "BoxCollider3D"
+        }
+      ],
+      "faceCulling": true,
+      "name": "Salida",
+      "position": [
+        5.16,
+        4.1,
+        -0.96
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "scriptFields": [
+        {
+          "field": "jugador",
+          "script": "Salida",
+          "value": "Capsula"
+        },
+        {
+          "field": "fundido",
+          "script": "Salida",
+          "value": "Fundido/Negro"
+        },
+        {
+          "field": "siguiente",
+          "script": "Salida",
+          "value": "Hab2"
+        }
+      ],
+      "scripts": [
+        "Salida"
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "faceCulling": false,
+          "material": "Assets/Materials/NuevoMaterial.strmat",
+          "name": "Plano",
+          "position": [
+            0.800000011920929,
+            0.0,
+            0.0
+          ],
+          "primitive": "Plane",
+          "rotation": [
+            -90.0,
+            0.0,
+            -90.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            -0.75
+          ],
+          "scriptFields": [
+            {
+              "field": "sonido",
+              "script": "Parpadeo",
+              "value": ""
+            }
+          ],
+          "scripts": [
+            "Parpadeo"
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "faceCulling": true,
+      "mesh": "Assets\\Models\\alarma.strmesh",
+      "name": "Despertador",
+      "position": [
+        -0.6215994954109192,
+        3.097273826599121,
+        -0.12019816786050797
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        -27.44012451171875,
+        0.0
+      ],
+      "scale": [
+        0.05999999865889549,
+        0.07999999821186066,
+        0.07999999821186066
+      ],
+      "staticForLighting": false,
+      "submeshMaterials": [
+        {
+          "material": "Assets/Materials/alarma/Material.strmat",
+          "name": "Material"
+        }
+      ]
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "components": [
+            {
+              "anchor": [
+                1,
+                1
+              ],
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "size": [
+                6000.0,
+                6000.0
+              ],
+              "type": "UiTransform"
+            },
+            {
+              "border": 0.0,
+              "borderColor": [
+                1,
+                1,
+                1,
+                1
+              ],
+              "color": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "type": "UiPanel"
+            }
+          ],
+          "faceCulling": true,
+          "name": "Negro",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "components": [
+        {
+          "referenceHeight": 720.0,
+          "type": "UiCanvas"
+        }
+      ],
+      "faceCulling": true,
+      "name": "Fundido",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
       "rotation": [
         0.0,
         0.0,
