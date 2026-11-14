@@ -338,9 +338,9 @@
             0.0,
             0.0
           ],
-          "height": 2.0,
+          "height": 1.0,
           "isTrigger": false,
-          "radius": 0.5,
+          "radius": 0.30000001192092896,
           "type": "CapsuleCollider"
         }
       ],
@@ -348,8 +348,8 @@
       "name": "Capsula",
       "position": [
         0.0,
-        0.4927995502948761,
-        0.0
+        2.9801926612854004,
+        -0.21931523084640503
       ],
       "primitive": "Capsule",
       "rotation": [
