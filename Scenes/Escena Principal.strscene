@@ -342,6 +342,13 @@
           "isTrigger": false,
           "radius": 0.30000001192092896,
           "type": "CapsuleCollider"
+        },
+        {
+          "gravity": 18.0,
+          "isKinematic": false,
+          "mass": 1.0,
+          "type": "Rigidbody",
+          "useGravity": true
         }
       ],
       "faceCulling": true,
@@ -396,6 +403,36 @@
         {
           "active": true,
           "children": [],
+          "components": [
+            {
+              "center": [
+                4.699999809265137,
+                -3.200000047683716,
+                0.0
+              ],
+              "isTrigger": false,
+              "size": [
+                16.450000762939453,
+                1.0,
+                16.600000381469727
+              ],
+              "type": "BoxCollider3D"
+            },
+            {
+              "center": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "isTrigger": false,
+              "size": [
+                2.0999999046325684,
+                1.0,
+                1.0
+              ],
+              "type": "BoxCollider3D"
+            }
+          ],
           "faceCulling": false,
           "mesh": "Assets\\Models\\Habi1remember.strmesh",
           "name": "Cubo (1)",
@@ -464,6 +501,29 @@
               "name": "Material.001"
             }
           ]
+        },
+        {
+          "active": true,
+          "children": [],
+          "faceCulling": true,
+          "name": "Colliders",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
         }
       ],
       "faceCulling": true,
@@ -474,6 +534,52 @@
         0.0
       ],
       "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [
+        {
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "isTrigger": false,
+          "size": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "type": "BoxCollider3D"
+        },
+        {
+          "gravity": 18.0,
+          "isKinematic": false,
+          "mass": 1.0,
+          "type": "Rigidbody",
+          "useGravity": true
+        }
+      ],
+      "faceCulling": true,
+      "name": "Cubo (2)",
+      "position": [
+        0.0,
+        5.066863536834717,
+        1.543618083000183
+      ],
+      "primitive": "Cube",
       "rotation": [
         0.0,
         0.0,
