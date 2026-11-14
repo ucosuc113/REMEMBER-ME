@@ -1,0 +1,16 @@
+{
+  "name": "Oclusor",
+  "type": "unlit",
+  "surface": "opaque",
+  "albedo": [
+    0.05,
+    0.05,
+    0.05,
+    1.0
+  ],
+  "emissive": [
+    0,
+    0,
+    0
+  ]
+}

@@ -828,7 +828,7 @@
           ],
           "isTrigger": true,
           "size": [
-            2.535,
+            1.4,
             1.515,
             0.84
           ],
@@ -838,7 +838,7 @@
       "faceCulling": true,
       "name": "Salida",
       "position": [
-        5.16,
+        5.7,
         4.1,
         -0.96
       ],

@@ -1,0 +1,27 @@
+{
+  "albedo": [
+    0.368634432554245,
+    0.368634432554245,
+    0.368634432554245,
+    1.0
+  ],
+  "emissive": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "metallic": 0.0,
+  "name": "Material.003",
+  "normalStrength": 1.0,
+  "occlusionStrength": 1.0,
+  "roughness": 0.9,
+  "shininess": 24.0,
+  "specular": [
+    0.25,
+    0.25,
+    0.25
+  ],
+  "specularLevel": 0.3,
+  "surface": "opaque",
+  "type": "lit"
+}

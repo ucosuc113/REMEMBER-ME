@@ -1,0 +1,17 @@
+{
+  "name": "Haz",
+  "type": "unlit",
+  "surface": "transparent",
+  "blend": "additive",
+  "albedo": [
+    1.0,
+    0.93,
+    0.8,
+    0.07
+  ],
+  "emissive": [
+    0,
+    0,
+    0
+  ]
+}

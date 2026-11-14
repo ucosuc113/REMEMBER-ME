@@ -21,11 +21,90 @@ class Control : public strace::IScript {
     FloatField sensibilidad{this, "sensibilidad", 0.15f};
     BoolField invertirY{this, "invertirY", false};
     FloatField empuje{this, "empuje", 0.7f};
+    FloatField alcance{this, "alcance", 0.9f};
+    FloatField fuerzaAgarre{this, "fuerzaAgarre", 10.0f};
     ObjectField camara{this, "camara"};
 
     float m_pitch = 0.0f;
     bool m_fijo = true;
     std::vector<GameObject*> m_cajas;
+    GameObject* m_agarrada = nullptr;
+    float m_distancia = 0.0f;
+
+    static void Centro(const remember::Caja3& c, float& x, float& y, float& z) {
+        x = (c.min[0] + c.max[0]) * 0.5f;
+        y = (c.min[1] + c.max[1]) * 0.5f;
+        z = (c.min[2] + c.max[2]) * 0.5f;
+    }
+
+    void Soltar() {
+        if (m_agarrada) {
+            if (Rigidbody* rb = GetComponent<Rigidbody>(*m_agarrada)) {
+                rb->velocity.x = 0.0f;
+                rb->velocity.z = 0.0f;
+            }
+        }
+        m_agarrada = nullptr;
+    }
+
+    void Agarrar(float fx, float fz) {
+        remember::Caja3 yo;
+        if (!remember::CajaDe(*gameObject, yo)) return;
+        float px, py, pz;
+        Centro(yo, px, py, pz);
+        float radio = (yo.max[0] - yo.min[0]) * 0.5f;
+        GameObject* mejor = nullptr;
+        float mejorPuntos = 0.0f;
+        float mejorDist = 0.0f;
+        for (GameObject* caja : m_cajas) {
+            remember::Caja3 c;
+            if (!caja->active || !remember::CajaDe(*caja, c)) continue;
+            if (yo.min[1] >= c.max[1] - 0.05f) continue;
+            float bx, by, bz;
+            Centro(c, bx, by, bz);
+            float dx = bx - px, dz = bz - pz;
+            float dist = std::sqrt(dx * dx + dz * dz);
+            float media = std::max(c.max[0] - c.min[0], c.max[2] - c.min[2]) * 0.5f;
+            if (dist - media - radio > alcance.Get()) continue;
+            float frente = dist > 0.001f ? (dx * fx + dz * fz) / dist : 1.0f;
+            if (frente < 0.5f) continue;
+            float puntos = frente - dist * 0.2f;
+            if (!mejor || puntos > mejorPuntos) {
+                mejor = caja;
+                mejorPuntos = puntos;
+                mejorDist = std::max(dist, media + radio + 0.08f);
+            }
+        }
+        m_agarrada = mejor;
+        m_distancia = mejorDist;
+    }
+
+    void Arrastrar(float fx, float fz) {
+        if (!m_agarrada) return;
+        Rigidbody* rb = GetComponent<Rigidbody>(*m_agarrada);
+        remember::Caja3 yo, c;
+        if (!rb || !m_agarrada->active || !remember::CajaDe(*gameObject, yo) || !remember::CajaDe(*m_agarrada, c)) {
+            Soltar();
+            return;
+        }
+        float px, py, pz, bx, by, bz;
+        Centro(yo, px, py, pz);
+        Centro(c, bx, by, bz);
+        float tx = px + fx * m_distancia;
+        float tz = pz + fz * m_distancia;
+        float vx = (tx - bx) * fuerzaAgarre.Get();
+        float vz = (tz - bz) * fuerzaAgarre.Get();
+        float maximo = speed.Get() * 1.5f;
+        float largo = std::sqrt(vx * vx + vz * vz);
+        if (largo > maximo) {
+            vx *= maximo / largo;
+            vz *= maximo / largo;
+        }
+        rb->velocity.x = vx;
+        rb->velocity.z = vz;
+        float lejos = std::sqrt((bx - px) * (bx - px) + (bz - pz) * (bz - pz));
+        if (lejos > m_distancia + alcance.Get() * 1.5f) Soltar();
+    }
 
     void BuscarCajas() {
         m_cajas.clear();
@@ -47,6 +126,7 @@ class Control : public strace::IScript {
         float rz = (yo.max[2] - yo.min[2]) * 0.5f;
 
         for (GameObject* caja : m_cajas) {
+            if (caja == m_agarrada) continue;
             Rigidbody* rb = GetComponent<Rigidbody>(*caja);
             remember::Caja3 c;
             if (!caja->active || !rb || !remember::CajaDe(*caja, c)) continue;
@@ -81,8 +161,10 @@ public:
         in.BindKey("saltar", Key::Space);
         in.BindKey("soltar_mouse", Key::Escape);
         in.BindMouseButton("tomar_mouse", MouseButton::Left);
+        in.BindMouseButton("agarrar", MouseButton::Left);
         Cursor::SetMode(CursorMode::Locked);
         m_fijo = true;
+        m_agarrada = nullptr;
         BuscarCajas();
     }
 
@@ -95,6 +177,7 @@ public:
         GameObject* cam = camara.Get();
 
         if (remember::controlBloqueado) {
+            Soltar();
             rb->velocity.x = 0.0f;
             rb->velocity.z = 0.0f;
             if (cam) m_pitch = -cam->transform.rotation[0];
@@ -102,11 +185,14 @@ public:
             return;
         }
 
+        bool recienFijado = false;
         if (m_fijo && in.Pressed("soltar_mouse")) {
             m_fijo = false;
+            Soltar();
             Cursor::SetMode(CursorMode::Visible);
         } else if (!m_fijo && in.Pressed("tomar_mouse")) {
             m_fijo = true;
+            recienFijado = true;
             Cursor::SetMode(CursorMode::Locked);
         }
 
@@ -137,6 +223,10 @@ public:
 
         rb->velocity.x = dx * speed.Get();
         rb->velocity.z = dz * speed.Get();
+
+        if (m_fijo && !recienFijado && in.Pressed("agarrar") && !m_agarrada) Agarrar(fx, fz);
+        if (m_agarrada && !in.Held("agarrar")) Soltar();
+        Arrastrar(fx, fz);
         Empujar(rb->velocity.x, rb->velocity.z);
 
         if (rb->grounded && in.Pressed("saltar")) {

@@ -48,8 +48,8 @@
   "render": {
     "aa": "off",
     "lighting": "soft",
-    "shadowAA": "x2",
-    "shadows": "medium"
+    "shadowAA": "x4",
+    "shadows": "high"
   },
   "scenes": [
     {

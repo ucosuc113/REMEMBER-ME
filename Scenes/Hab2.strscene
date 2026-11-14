@@ -1,18 +1,18 @@
 {
   "environment": {
     "ambientColor": [
-      0.11999999731779099,
-      0.11999999731779099,
-      0.14000000059604645
+      0.20000000298023224,
+      0.20999999344348907,
+      0.25
     ],
     "ambientEnergy": 1.0,
     "ambientGround": [
-      0.11999999731779099,
-      0.11999999731779099,
-      0.14000000059604645
+      0.09000000357627869,
+      0.09000000357627869,
+      0.10000000149011612
     ],
     "exposure": 1.0,
-    "hemisphere": false,
+    "hemisphere": true,
     "paint": {
       "bristle": 0.5,
       "detail": 0.6000000238418579,
@@ -129,7 +129,7 @@
           1.0,
           1.0
         ],
-        "intensity": 1.0,
+        "intensity": 0.5,
         "range": 10.0,
         "spotAngle": 45.0,
         "static": false,
@@ -137,9 +137,9 @@
       },
       "name": "Luz Puntual",
       "position": [
-        0.8,
-        4.6,
-        -9.2
+        0.800000011920929,
+        4.599999904632568,
+        -9.199999809265137
       ],
       "primitive": "Empty",
       "rotation": [
@@ -383,9 +383,9 @@
       "faceCulling": true,
       "name": "Capsula",
       "position": [
-        -0.55,
-        2.93,
-        -8.658999999999999
+        -0.550000011920929,
+        2.930000066757202,
+        -8.659000396728516
       ],
       "primitive": "Capsule",
       "rotation": [
@@ -484,41 +484,41 @@
           "components": [
             {
               "center": [
-                2.69,
-                -3.27,
-                -30.67
+                2.690000057220459,
+                -3.2699999809265137,
+                -30.670000076293945
               ],
               "isTrigger": false,
               "size": [
-                12.6,
+                12.600000381469727,
                 1.0,
-                16.2
+                16.200000762939453
               ],
               "type": "BoxCollider3D"
             },
             {
               "center": [
-                -3.61,
+                -3.609999895095825,
                 3.0,
-                -30.67
+                -30.670000076293945
               ],
               "isTrigger": false,
               "size": [
                 0.5,
                 12.0,
-                16.2
+                16.200000762939453
               ],
               "type": "BoxCollider3D"
             },
             {
               "center": [
-                2.69,
+                2.690000057220459,
                 3.0,
-                -22.56
+                -22.559999465942383
               ],
               "isTrigger": false,
               "size": [
-                12.6,
+                12.600000381469727,
                 12.0,
                 0.5
               ],
@@ -526,13 +526,13 @@
             },
             {
               "center": [
-                2.69,
+                2.690000057220459,
                 3.0,
-                -38.78
+                -38.779998779296875
               ],
               "isTrigger": false,
               "size": [
-                12.6,
+                12.600000381469727,
                 12.0,
                 0.5
               ],
@@ -540,23 +540,23 @@
             },
             {
               "center": [
-                8.99,
+                8.989999771118164,
                 3.0,
-                -27.65
+                -27.649999618530273
               ],
               "isTrigger": false,
               "size": [
                 0.5,
                 12.0,
-                9.68
+                9.680000305175781
               ],
               "type": "BoxCollider3D"
             },
             {
               "center": [
-                8.99,
+                8.989999771118164,
                 3.0,
-                -36.78
+                -36.779998779296875
               ],
               "isTrigger": false,
               "size": [
@@ -568,55 +568,55 @@
             },
             {
               "center": [
-                8.99,
-                0.51,
-                -33.76
+                8.989999771118164,
+                0.5099999904632568,
+                -33.7599983215332
               ],
               "isTrigger": false,
               "size": [
                 0.5,
-                6.56,
-                2.54
+                6.559999942779541,
+                2.5399999618530273
               ],
               "type": "BoxCollider3D"
             },
             {
               "center": [
-                8.99,
-                8.6,
-                -33.76
+                8.989999771118164,
+                8.600000381469727,
+                -33.7599983215332
               ],
               "isTrigger": false,
               "size": [
                 0.5,
-                0.8,
-                2.54
+                0.800000011920929,
+                2.5399999618530273
               ],
               "type": "BoxCollider3D"
             },
             {
               "center": [
-                13.3,
-                3.29,
-                -33.76
+                13.300000190734863,
+                3.2899999618530273,
+                -33.7599983215332
               ],
               "isTrigger": false,
               "size": [
-                9.1,
+                9.100000381469727,
                 1.0,
-                2.54
+                2.5399999618530273
               ],
               "type": "BoxCollider3D"
             },
             {
               "center": [
-                13.3,
+                13.300000190734863,
                 6.0,
-                -35.28
+                -35.279998779296875
               ],
               "isTrigger": false,
               "size": [
-                9.1,
+                9.100000381469727,
                 5.0,
                 0.5
               ],
@@ -624,13 +624,13 @@
             },
             {
               "center": [
-                13.3,
+                13.300000190734863,
                 6.0,
-                -32.24
+                -32.2400016784668
               ],
               "isTrigger": false,
               "size": [
-                9.1,
+                9.100000381469727,
                 5.0,
                 0.5
               ],
@@ -638,29 +638,29 @@
             },
             {
               "center": [
-                18.09,
+                18.09000015258789,
                 6.0,
-                -33.76
+                -33.7599983215332
               ],
               "isTrigger": false,
               "size": [
                 0.5,
                 5.0,
-                2.54
+                2.5399999618530273
               ],
               "type": "BoxCollider3D"
             },
             {
               "center": [
-                -0.97,
-                -1.95,
-                -28.86
+                -0.9700000286102295,
+                -1.9500000476837158,
+                -28.860000610351563
               ],
               "isTrigger": false,
               "size": [
-                4.1,
-                1.65,
-                3.42
+                4.099999904632568,
+                1.649999976158142,
+                3.4200000762939453
               ],
               "type": "BoxCollider3D"
             }
@@ -685,7 +685,28 @@
             0.30000001192092896
           ],
           "staticForLighting": false,
-          "submeshMaterials": []
+          "submeshMaterials": [
+            {
+              "material": "Assets/Materials/Hab2/Material.004.strmat",
+              "name": "Material.004"
+            },
+            {
+              "material": "Assets/Materials/Habi1remember/Material.005.strmat",
+              "name": "Material.005"
+            },
+            {
+              "material": "Assets/Materials/Hab2/Material.003.strmat",
+              "name": "Material.003"
+            },
+            {
+              "material": "Assets/Materials/Hab2/Material.002.strmat",
+              "name": "Material.002"
+            },
+            {
+              "material": "Assets/Materials/Hab2/Material.001.strmat",
+              "name": "Material.001"
+            }
+          ]
         },
         {
           "active": true,
@@ -734,13 +755,12 @@
     {
       "active": true,
       "children": [],
-      "components": [],
       "faceCulling": true,
       "name": "PuntoCama",
       "position": [
-        -0.55,
-        2.93,
-        -8.658999999999999
+        -0.550000011920929,
+        2.930000066757202,
+        -8.659000396728516
       ],
       "primitive": "Empty",
       "rotation": [
@@ -758,13 +778,12 @@
     {
       "active": true,
       "children": [],
-      "components": [],
       "faceCulling": true,
       "name": "PuntoPie",
       "position": [
         0.0,
-        3.05,
-        -9.674
+        3.049999952316284,
+        -9.673999786376953
       ],
       "primitive": "Empty",
       "rotation": [
@@ -781,6 +800,7 @@
     },
     {
       "active": true,
+      "castSunShadows": true,
       "children": [],
       "components": [
         {
@@ -808,9 +828,9 @@
       "faceCulling": true,
       "name": "Caja",
       "position": [
-        1.8,
-        2.9,
-        -7.4
+        1.7999999523162842,
+        2.9000000953674316,
+        -7.400000095367432
       ],
       "primitive": "Cube",
       "rotation": [
@@ -827,6 +847,7 @@
     },
     {
       "active": true,
+      "castSunShadows": true,
       "children": [],
       "components": [
         {
@@ -854,9 +875,9 @@
       "faceCulling": true,
       "name": "Caja 2",
       "position": [
-        0.2,
-        3.15,
-        -10.9
+        0.20000000298023224,
+        3.1500000953674316,
+        -10.899999618530273
       ],
       "primitive": "Cube",
       "rotation": [
@@ -873,6 +894,7 @@
     },
     {
       "active": true,
+      "castSunShadows": true,
       "children": [],
       "components": [
         {
@@ -900,8 +922,8 @@
       "faceCulling": true,
       "name": "Caja 3",
       "position": [
-        1.6,
-        3.4,
+        1.600000023841858,
+        3.4000000953674316,
         -11.0
       ],
       "primitive": "Cube",
@@ -929,9 +951,9 @@
           ],
           "isTrigger": true,
           "size": [
-            2.19,
-            1.32,
-            0.76
+            1.100000023841858,
+            1.3200000524520874,
+            0.7599999904632568
           ],
           "type": "BoxCollider3D"
         }
@@ -939,9 +961,9 @@
       "faceCulling": true,
       "name": "Salida",
       "position": [
-        4.245,
-        5.24,
-        -10.128
+        4.75,
+        5.239999771118164,
+        -10.128000259399414
       ],
       "primitive": "Empty",
       "rotation": [
@@ -1020,7 +1042,7 @@
       "position": [
         -0.6215994954109192,
         3.097273826599121,
-        -9.444198167860508
+        -9.444198608398438
       ],
       "primitive": "Empty",
       "rotation": [
@@ -1040,6 +1062,377 @@
           "name": "Material"
         }
       ]
+    },
+    {
+      "active": true,
+      "children": [],
+      "faceCulling": true,
+      "light": {
+        "attenuation": 1.0,
+        "castsShadows": true,
+        "color": [
+          1.0,
+          0.9200000166893005,
+          0.800000011920929
+        ],
+        "intensity": 3.0,
+        "range": 6.0,
+        "spotAngle": 45.0,
+        "static": false,
+        "type": "Directional"
+      },
+      "name": "Sol",
+      "position": [
+        0.800000011920929,
+        4.5,
+        -9.199999809265137
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        45.0,
+        170.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Norte abajo",
+          "position": [
+            0.800000011920929,
+            4.015500068664551,
+            -6.78000020980835
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            3.799999952316284,
+            3.0299999713897705,
+            0.10000000149011612
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Norte arriba",
+          "position": [
+            0.800000011920929,
+            6.03000020980835,
+            -6.78000020980835
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            3.799999952316284,
+            0.36000001430511475,
+            0.10000000149011612
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Norte derecha",
+          "position": [
+            2.130000114440918,
+            5.690000057220459,
+            -6.78000020980835
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.1399999856948853,
+            0.33000001311302185,
+            0.10000000149011612
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Techo",
+          "position": [
+            0.800000011920929,
+            6.179999828338623,
+            -9.199999809265137
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            3.799999952316284,
+            0.10000000149011612,
+            4.900000095367432
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Oeste",
+          "position": [
+            -1.0700000524520874,
+            4.300000190734863,
+            -9.199999809265137
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.10000000149011612,
+            3.799999952316284,
+            4.900000095367432
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Sur",
+          "position": [
+            0.800000011920929,
+            4.300000190734863,
+            -11.619999885559082
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            3.799999952316284,
+            3.799999952316284,
+            0.10000000149011612
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Este sur",
+          "position": [
+            2.680000066757202,
+            4.300000190734863,
+            -11.079999923706055
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.10000000149011612,
+            3.799999952316284,
+            1.1399999856948853
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Este norte",
+          "position": [
+            2.680000066757202,
+            4.300000190734863,
+            -8.199999809265137
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.10000000149011612,
+            3.799999952316284,
+            2.9000000953674316
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Este abajo",
+          "position": [
+            2.680000066757202,
+            3.490000009536743,
+            -10.130000114440918
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.10000000149011612,
+            2.180000066757202,
+            0.7599999904632568
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "castShadows": false,
+          "castSunShadows": true,
+          "children": [],
+          "faceCulling": true,
+          "material": "Assets/Materials/Hab2/Oclusor.strmat",
+          "name": "Este arriba",
+          "position": [
+            2.680000066757202,
+            6.050000190734863,
+            -10.130000114440918
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.10000000149011612,
+            0.30000001192092896,
+            0.7599999904632568
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "faceCulling": true,
+      "name": "Oclusores",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "castShadows": false,
+      "children": [],
+      "faceCulling": false,
+      "material": "Assets/Materials/Hab2/Haz.strmat",
+      "name": "Haz de luz",
+      "position": [
+        0.5440000295639038,
+        4.1479997634887695,
+        -8.361000061035156
+      ],
+      "primitive": "Cube",
+      "rotation": [
+        45.0,
+        170.0,
+        0.0
+      ],
+      "scale": [
+        2.569999933242798,
+        0.3199999928474426,
+        4.360000133514404
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "castShadows": false,
+      "children": [],
+      "faceCulling": false,
+      "material": "Assets/Materials/Hab2/Cielo.strmat",
+      "name": "Cielo",
+      "position": [
+        0.800000011920929,
+        4.0,
+        -9.199999809265137
+      ],
+      "primitive": "Sphere",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        120.0,
+        120.0,
+        120.0
+      ],
+      "staticForLighting": false
     },
     {
       "active": true,
@@ -1066,10 +1459,10 @@
             {
               "border": 0.0,
               "borderColor": [
-                1,
-                1,
-                1,
-                1
+                1.0,
+                1.0,
+                1.0,
+                1.0
               ],
               "color": [
                 0.0,

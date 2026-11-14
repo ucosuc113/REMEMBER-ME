@@ -33,7 +33,6 @@ public:
             if (!remember::Tocan(yo, zona)) return;
             m_activa = true;
             m_t = 0.0f;
-            remember::controlBloqueado = true;
         }
 
         m_t += deltaTime;
