@@ -21,6 +21,11 @@ void OnUpdate(float deltaTime) override {
  
  Transform& t = gameObject->transform;
    
+   
+   
+   t.position[0] 
+   
+   
     }
 };
 
