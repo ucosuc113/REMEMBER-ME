@@ -17,8 +17,8 @@ public:
 void OnUpdate(float deltaTime) override {
     InputActions& in = InputService::Actions();
  
- float avanzar = in.Axis("move_back","move_forward");
- float girar = in.Axis("move_left","move_right"); 
+ float avanzar = in.Axis("move_back", "move_forward");
+ float girar = in.Axis("move_left", "move_right");
  Transform& t = gameObject->transform;
  
    t.rotation[1] += girar * giro.Get() * deltaTime;
