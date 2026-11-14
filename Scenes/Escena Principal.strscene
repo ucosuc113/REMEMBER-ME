@@ -354,9 +354,9 @@
       "faceCulling": true,
       "name": "Capsula",
       "position": [
-        0.0,
-        2.9801926612854004,
-        -0.21931523084640503
+        0.37985560297966003,
+        3.3832130432128906,
+        -0.7762373089790344
       ],
       "primitive": "Capsule",
       "rotation": [
@@ -365,9 +365,16 @@
         0.0
       ],
       "scale": [
-        1.0,
-        1.0,
-        1.0
+        0.800000011920929,
+        0.800000011920929,
+        0.800000011920929
+      ],
+      "scriptFields": [
+        {
+          "field": "camara",
+          "script": "Control",
+          "value": "Capsula/Camara"
+        }
       ],
       "scripts": [
         "Control"
