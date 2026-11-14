@@ -37,7 +37,7 @@
   "input": {
     "cursor": "locked"
   },
-  "platform": "windows",
+  "platform": "web",
   "product": {
     "company": "",
     "copyright": "",

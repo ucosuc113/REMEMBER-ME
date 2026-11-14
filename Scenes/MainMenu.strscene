@@ -19,7 +19,7 @@
       "strength": 1.0,
       "stroke": 0.12999999523162842
     },
-    "postProcess": "",
+    "postProcess": "Assets/Materials/MenuPost.strmat",
     "tonemap": "linear",
     "uiOverPost": false
   },
@@ -521,6 +521,35 @@
         "far": 1000.0,
         "focusDistance": 5.0,
         "fovY": 60.0,
+        "grade": {
+          "contrast": 1.1799999475479126,
+          "enabled": true,
+          "exposure": 0.0,
+          "gain": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gamma": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "highlights": 0.0,
+          "hue": 0.0,
+          "lift": [
+            0.0,
+            0.0,
+            -0.029999999329447746
+          ],
+          "mix": 1.0,
+          "pivot": 0.5,
+          "saturation": 0.800000011920929,
+          "shadows": 0.0,
+          "temperature": -0.15000000596046448,
+          "tint": 0.0,
+          "vibrance": 0.0
+        },
         "near": 0.10000000149011612,
         "orthoHalfHeight": 10.0
       },
@@ -529,8 +558,8 @@
       "name": "Camara",
       "position": [
         0.6559593677520752,
-        3.13287353515625,
-        0.12196148186922073
+        3.177386522293091,
+        0.17179477214813232
       ],
       "primitive": "Empty",
       "rotation": [
@@ -544,6 +573,220 @@
         1.0
       ],
       "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "components": [
+            {
+              "anchor": [
+                1,
+                1
+              ],
+              "pos": [
+                355.0,
+                -250.0
+              ],
+              "size": [
+                560.0,
+                89.0
+              ],
+              "type": "UiTransform"
+            },
+            {
+              "brightness": 1.0,
+              "opacity": 0.9200000166893005,
+              "path": "Assets\\Models\\REMEMBER ME.png",
+              "preserveAspect": true,
+              "type": "UiImage"
+            }
+          ],
+          "faceCulling": true,
+          "name": "Imagen",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
+        },
+        {
+          "active": true,
+          "children": [],
+          "components": [
+            {
+              "anchor": [
+                1,
+                1
+              ],
+              "pos": [
+                552.0,
+                -168.0
+              ],
+              "size": [
+                134.0,
+                44.0
+              ],
+              "type": "UiTransform"
+            },
+            {
+              "brightness": 0.0,
+              "opacity": 0.800000011920929,
+              "path": "Assets\\Models\\JUGAR.png",
+              "preserveAspect": true,
+              "type": "UiImage"
+            },
+            {
+              "border": 0.0,
+              "borderColor": [
+                1.0,
+                1.0,
+                1.0,
+                0.0
+              ],
+              "color": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "disabledColor": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "hoverColor": [
+                0.0,
+                0.0,
+                0.0,
+                0.05999999865889549
+              ],
+              "interactable": true,
+              "pressedColor": [
+                0.0,
+                0.0,
+                0.0,
+                0.11999999731779099
+              ],
+              "type": "UiButton"
+            }
+          ],
+          "faceCulling": true,
+          "name": "Imagen (1)",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "components": [
+        {
+          "referenceHeight": 720.0,
+          "type": "UiCanvas"
+        }
+      ],
+      "faceCulling": true,
+      "name": "Canvas (1)",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "faceCulling": false,
+          "material": "Assets/Materials/NuevoMaterial.strmat",
+          "name": "Plano",
+          "position": [
+            0.800000011920929,
+            0.0,
+            0.0
+          ],
+          "primitive": "Plane",
+          "rotation": [
+            -90.0,
+            0.0,
+            -90.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            -0.75
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "faceCulling": true,
+      "mesh": "Assets\\Models\\alarma.strmesh",
+      "name": "GameObject (1)",
+      "position": [
+        -0.6215994954109192,
+        3.097273826599121,
+        -0.12019816786050797
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        -27.44012451171875,
+        0.0
+      ],
+      "scale": [
+        0.05999999865889549,
+        0.07999999821186066,
+        0.07999999821186066
+      ],
+      "staticForLighting": false,
+      "submeshMaterials": [
+        {
+          "material": "Assets/Materials/alarma/Material.strmat",
+          "name": "Material"
+        }
+      ]
     }
   ]
 }
