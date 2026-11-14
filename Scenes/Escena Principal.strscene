@@ -366,6 +366,125 @@
         "Control"
       ],
       "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "faceCulling": true,
+      "name": "Mapas",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "faceCulling": false,
+          "mesh": "Assets\\Models\\Habi1remember.strmesh",
+          "name": "Cubo (1)",
+          "position": [
+            0.0,
+            3.4397709369659424,
+            0.0
+          ],
+          "primitive": "Cube",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ],
+          "staticForLighting": false,
+          "submeshMaterials": [
+            {
+              "material": "Assets/Materials/Habi1remember/Material.004.strmat",
+              "name": "Material.004"
+            },
+            {
+              "material": "Assets/Materials/Habi1remember/Material.005.strmat",
+              "name": "Material.005"
+            }
+          ]
+        },
+        {
+          "active": true,
+          "children": [],
+          "faceCulling": true,
+          "mesh": "Assets\\Models\\Cama y mesaremember.strmesh",
+          "name": "GameObject",
+          "position": [
+            0.0,
+            3.4441940784454346,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            0.30000001192092896,
+            0.30000001192092896,
+            0.30000001192092896
+          ],
+          "staticForLighting": false,
+          "submeshMaterials": [
+            {
+              "material": "Assets/Materials/Cama y mesaremember/Material.003.strmat",
+              "name": "Material.003"
+            },
+            {
+              "material": "Assets/Materials/Cama y mesaremember/Material.002.strmat",
+              "name": "Material.002"
+            },
+            {
+              "material": "Assets/Materials/Cama y mesaremember/Material.001.strmat",
+              "name": "Material.001"
+            }
+          ]
+        }
+      ],
+      "faceCulling": true,
+      "name": "1",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
     }
   ]
 }
