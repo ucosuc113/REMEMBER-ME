@@ -9,8 +9,8 @@ using namespace strace;
 
 class Control : public strace::IScript {
     
-FloatField speed{this,"speed",5.0f;
-FloatField giro{this,"giro",2.0f;
+FloatField speed{this,"speed",5.0f};
+FloatField giro{this,"giro",2.0f};
 
 public:
 
