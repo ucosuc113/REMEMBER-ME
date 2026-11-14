@@ -19,6 +19,7 @@ class Control : public strace::IScript {
     ObjectField camara{this, "camara"};
 
     float m_pitch = 0.0f;
+    bool m_fijo = true;
 
 public:
     void OnStart() override {
@@ -26,7 +27,8 @@ public:
         in.BindKey("saltar", Key::Space);
         in.BindKey("soltar_mouse", Key::Escape);
         in.BindMouseButton("tomar_mouse", MouseButton::Left);
-        Cursor::SetMode(CursorMode::Hidden);
+        Cursor::SetMode(CursorMode::Locked);
+        m_fijo = true;
     }
 
     void OnUpdate(float deltaTime) override {
@@ -36,13 +38,18 @@ public:
         InputActions& in = InputService::Actions();
         Transform& t = gameObject->transform;
 
-        if (in.Pressed("soltar_mouse")) Cursor::SetMode(CursorMode::Visible);
-        if (in.Pressed("tomar_mouse")) Cursor::SetMode(CursorMode::Hidden);
+        if (m_fijo && in.Pressed("soltar_mouse")) {
+            m_fijo = false;
+            Cursor::SetMode(CursorMode::Visible);
+        } else if (!m_fijo && in.Pressed("tomar_mouse")) {
+            m_fijo = true;
+            Cursor::SetMode(CursorMode::Locked);
+        }
 
-        if (Cursor::Mode() == CursorMode::Hidden) {
+        if (m_fijo) {
             float signo = invertirY.Get() ? 1.0f : -1.0f;
-            t.rotation[1] += in.CursorDeltaX() * sensibilidad.Get();
-            m_pitch = std::clamp(m_pitch + signo * in.CursorDeltaY() * sensibilidad.Get(), -85.0f, 85.0f);
+            t.rotation[1] += in.LookDeltaX() * sensibilidad.Get();
+            m_pitch = std::clamp(m_pitch + signo * in.LookDeltaY() * sensibilidad.Get(), -85.0f, 85.0f);
         }
 
         if (GameObject* cam = camara.Get()) {

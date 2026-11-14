@@ -56,6 +56,11 @@
       "enabled": true,
       "name": "Escena Principal",
       "path": "Scenes/Escena Principal.strscene"
+    },
+    {
+      "enabled": true,
+      "name": "MainMenu",
+      "path": "Scenes/MainMenu.strscene"
     }
   ],
   "web": {
