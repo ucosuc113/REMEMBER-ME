@@ -116,6 +116,240 @@
         1.0
       ],
       "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "faceCulling": true,
+      "light": {
+        "attenuation": 1.0,
+        "castsShadows": false,
+        "color": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "intensity": 1.0,
+        "range": 10.0,
+        "spotAngle": 45.0,
+        "static": false,
+        "type": "Point"
+      },
+      "name": "Luz Puntual",
+      "position": [
+        2.714277982711792,
+        4.3852105140686035,
+        -3.107835531234741
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [],
+      "components": [
+        {
+          "referenceHeight": 720.0,
+          "type": "UiCanvas"
+        }
+      ],
+      "faceCulling": true,
+      "name": "Canvas",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "children": [],
+          "components": [
+            {
+              "anchor": [
+                1,
+                1
+              ],
+              "pos": [
+                0.0,
+                0.0
+              ],
+              "size": [
+                320.0,
+                40.0
+              ],
+              "type": "UiTransform"
+            },
+            {
+              "align": [
+                1,
+                1
+              ],
+              "color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "scale": 2,
+              "text": "Prueba",
+              "type": "UiLabel",
+              "wrap": false
+            }
+          ],
+          "faceCulling": true,
+          "name": "Texto",
+          "position": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "components": [
+        {
+          "anchor": [
+            1,
+            1
+          ],
+          "pos": [
+            0.0,
+            0.0
+          ],
+          "size": [
+            320.0,
+            180.0
+          ],
+          "type": "UiTransform"
+        },
+        {
+          "border": 0.0,
+          "borderColor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "color": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "type": "UiPanel"
+        }
+      ],
+      "faceCulling": true,
+      "name": "Panel",
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "primitive": "Empty",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
+    },
+    {
+      "active": true,
+      "children": [
+        {
+          "active": true,
+          "camera": {
+            "aperture": 0.0,
+            "far": 1000.0,
+            "focusDistance": 5.0,
+            "fovY": 60.0,
+            "near": 0.10000000149011612,
+            "orthoHalfHeight": 10.0
+          },
+          "children": [],
+          "faceCulling": true,
+          "name": "Camara",
+          "position": [
+            0.0,
+            0.3423716723918915,
+            0.0
+          ],
+          "primitive": "Empty",
+          "rotation": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "staticForLighting": false
+        }
+      ],
+      "faceCulling": true,
+      "name": "Capsula",
+      "position": [
+        0.0,
+        0.4927995502948761,
+        0.0
+      ],
+      "primitive": "Capsule",
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "staticForLighting": false
     }
   ]
 }
