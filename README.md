@@ -11,6 +11,11 @@ Los controles de juego son:
 - Movimiento: WASD/Space y Mouse
 - Interaccion: Empuja las cajas con tu cuerpo, o manten click para reubicarlas
 
+### Implementacion de 'Bounce Back'
+
+- El tema de la Hackaton Haven puerto colombia, fue Bounce Back
+- el juego sigue este tema, suando Bounce Back de manera metaforica, tienes que pasar de habitacion e ir recordando progresivamente tu propio cuarto hasta despertar, esto se basa en un rebote de una pelota estilo parabola, pero aca, la parabola va de poca energia, hasta el punto donde se lanza para comenzar a rebotar, SIGNIFICA, comienzas con la habitacion casi totalmente en el olvido, y terminas despertando en tu propia habitacion, despues de rebotar y recordar poco a poco tu propia habitacion
+
 como tienes que ganar:
 
 - debes reorganizar las cajas, hasta hacer un parkour y poder llegar a la salida de tu cuarto, y volver a despertar
